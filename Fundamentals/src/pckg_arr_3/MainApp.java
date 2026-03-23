@@ -1,5 +1,7 @@
 package pckg_arr_3;
 
+import pckg_arr_1.AUX_CLS;
+
 public class MainApp {
 
     public static void main(String[] args) {
@@ -28,7 +30,13 @@ public class MainApp {
         // POM_ARR.print2DArrayFloat(dvals);
 
         Float[] profits = POM_ARR.calcProfit(dvals);
+        System.out.println("--------------------------------------------");
 
+        for (int i = 0; i < profits.length; i++) {
+            System.out.println("Profit za " + (i + 1) + ". mjesec je: " + profits[i]);
+        }
+
+        System.out.println("--------------------------------------------");
         System.out.print("Prosjecni profit tvrtke za promatranu godinu je: ");
         System.out.println(POM_ARR.avgProfit(profits));
 

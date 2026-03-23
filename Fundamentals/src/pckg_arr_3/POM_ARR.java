@@ -11,12 +11,22 @@ public class POM_ARR {
         }
     }
 
-    public static Float[] calcProfit(Float[][] prihodRashod) {
+    /*public static Float[] calcProfit(Float[][] prihodRashod) {
         Float[] profit = new Float[prihodRashod.length];
 
         for (int k = 0; k < profit.length; k++) {
             profit[k] = prihodRashod[k][1] - prihodRashod[k][2];
             System.out.println("Profit za " + prihodRashod[k][0].intValue() + ". mjesec je: " + profit[k]);
+        }
+
+        return profit;
+    }*/
+
+    public static Float[] calcProfit(Float[][] prihodRashod) {
+        Float[] profit = new Float[prihodRashod.length];
+
+        for (int k = 0; k < profit.length; k++) {
+            profit[k] = prihodRashod[k][1] - prihodRashod[k][2];
         }
 
         return profit;
