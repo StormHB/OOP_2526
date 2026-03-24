@@ -1,4 +1,4 @@
-package pckg_ide_2_1;
+package pckg_ide_2;
 
 import java.util.Scanner;
 
