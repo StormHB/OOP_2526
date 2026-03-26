@@ -2,7 +2,7 @@ package pckg_ide_4;
 
 import java.util.Scanner;
 
-public class Zadatak_4_6 {
+public class Zadatak_4_7 {
 
     public static void main(String[] args) {
 
