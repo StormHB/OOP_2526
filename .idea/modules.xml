@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CLS_MODULE_ABS/CLS_MODULE_ABS.iml" filepath="$PROJECT_DIR$/CLS_MODULE_ABS/CLS_MODULE_ABS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/COL_MPS/COL_MPS.iml" filepath="$PROJECT_DIR$/COL_MPS/COL_MPS.iml" />
       <module fileurl="file://$PROJECT_DIR$/Fundamentals/Fundamentals.iml" filepath="$PROJECT_DIR$/Fundamentals/Fundamentals.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/OOP_2526.iml" filepath="$PROJECT_DIR$/.idea/OOP_2526.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POLI/POLI.iml" filepath="$PROJECT_DIR$/POLI/POLI.iml" />
       <module fileurl="file://$PROJECT_DIR$/STRUCT/STRUCT.iml" filepath="$PROJECT_DIR$/STRUCT/STRUCT.iml" />
     </modules>
   </component>
