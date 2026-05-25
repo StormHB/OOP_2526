@@ -1,0 +1,3 @@
+Prilikom pristupa elementu arr[arr.length] dolazi do ArrayIndexOutOfBoundsException iznimke.
+To upozorava da indeksi polja idu od 0 do length - 1.
+Iznimka je obradena pomocu try-catch bloka, dok se finally koristi za ispis stvarne duljine polja.

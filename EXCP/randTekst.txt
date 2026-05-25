@@ -1,0 +1,3 @@
+Ovo je prvi redak.
+Ovo je drugi redak.
+Testiram citanje datoteke.

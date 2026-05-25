@@ -1,0 +1,5 @@
+Kod citanja datoteke koja ne postoji javlja se FileNotFoundException.
+To je checked exception jer se mora obraditi pomocu try-catch bloka ili throws.
+Ako pokusamo pisati u Read-only datoteku moze doci do IOException.
+Robusnost programa povecana je koristenjem try-catch blokova i omogucavanjem korisniku ponovni unos
+imena datoteke.

@@ -8,7 +8,11 @@
       <module fileurl="file://$PROJECT_DIR$/Fundamentals/Fundamentals.iml" filepath="$PROJECT_DIR$/Fundamentals/Fundamentals.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/OOP_2526.iml" filepath="$PROJECT_DIR$/.idea/OOP_2526.iml" />
       <module fileurl="file://$PROJECT_DIR$/POLI/POLI.iml" filepath="$PROJECT_DIR$/POLI/POLI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SER_DESER/SER_DESER.iml" filepath="$PROJECT_DIR$/SER_DESER/SER_DESER.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SRL_DSRL/SRL_DSRL.iml" filepath="$PROJECT_DIR$/SRL_DSRL/SRL_DSRL.iml" />
       <module fileurl="file://$PROJECT_DIR$/STRUCT/STRUCT.iml" filepath="$PROJECT_DIR$/STRUCT/STRUCT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SWING_GUI/SWING_GUI.iml" filepath="$PROJECT_DIR$/SWING_GUI/SWING_GUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SER_DESER/untitled/untitled.iml" filepath="$PROJECT_DIR$/SER_DESER/untitled/untitled.iml" />
     </modules>
   </component>
 </project>

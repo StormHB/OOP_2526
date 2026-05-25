@@ -1,0 +1,3 @@
+Problem je sto korisnik moze unijeti vrijednost koja nije cijeli broj.
+U tom slucaju dolazi do InputMismatchException iznimke.
+Problem je rijesen koristenjem try-catch bloka i ponovnim trazenjem unosa od korisnika.
