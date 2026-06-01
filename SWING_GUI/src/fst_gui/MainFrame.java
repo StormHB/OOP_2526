@@ -8,9 +8,11 @@ import java.awt.event.ActionListener;
 public class MainFrame extends JFrame {
 
     private JTextArea textArea;
-    private JButton mainBtn;
+    private FormPanel formPanel;
     private JScrollPane txtAreaScroll;
+    private AppMenuBar menuBar;
     private ToolBar toolBar;
+    private static final String SAVEFILE = "./SWING_GUI/src/fst_gui/txtDataFile.txt";
 
     public MainFrame() {
         super("Simple gui app");
@@ -31,11 +33,10 @@ public class MainFrame extends JFrame {
 
     private void activateFrame() {
 
-        mainBtn.addActionListener(new ActionListener() {
+        formPanel.setFormPanelListener(new FormPanelListener() {
             @Override
-            public void actionPerformed(ActionEvent ae) {
-                String line = ae.toString() + ae.paramString() + Integer.toHexString(ae.hashCode()) + "\n";
-                setText2TxtArea(line);
+            public void formEventOccurred(Programmer programmer) {
+                setText2TxtArea(programmer.toString());
             }
         });
 
@@ -46,10 +47,26 @@ public class MainFrame extends JFrame {
                     resetTxtArea();
                 }
                 if (eventCommand == "SAVE") {
-                    resetTxtArea();
+                    AUX_IO.saveTxtDataFromArea(getAllTextFromArea(), SAVEFILE);
                 }
                 if (eventCommand == "LOAD") {
+                    String data = AUX_IO.loadTxtDataFromFile(SAVEFILE);
                     resetTxtArea();
+                    setText2TxtArea(data);
+                }
+            }
+        });
+
+        menuBar.setMenuBarListener(new AppMenuBarListener() {
+            @Override
+            public void menuBarEventOccurred(String menuBarEventActionCommand) {
+                if (menuBarEventActionCommand.equals("Save")) {
+                    String data = getAllTextFromArea();
+                    AUX_IO.saveTxtDataWithFileChooser(data);
+                }
+                if (menuBarEventActionCommand.equals("Load")) {
+                    String data = AUX_IO.loadTxtDataWithFileChooser();
+                    setText2TxtArea(data);
                 }
             }
         });
@@ -59,16 +76,18 @@ public class MainFrame extends JFrame {
 
         setLayout(new BorderLayout());
         add(txtAreaScroll, BorderLayout.CENTER);
-        add(mainBtn, BorderLayout.SOUTH);
+        add(formPanel, BorderLayout.SOUTH);
         add(toolBar, BorderLayout.NORTH);
     }
 
     private void initComps() {
 
         textArea = new JTextArea();
-        mainBtn = new JButton("Submit");
         txtAreaScroll = new JScrollPane(textArea, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
         toolBar = new ToolBar();
+        menuBar = new AppMenuBar();
+        formPanel = new FormPanel();
+        setJMenuBar(menuBar);
     }
 
     private void setText2TxtArea(String txt) {
@@ -78,4 +97,10 @@ public class MainFrame extends JFrame {
     private void resetTxtArea() {
         textArea.setText(null);
     }
+
+    private String getAllTextFromArea() {
+        return textArea.getText();
+    }
+
+
 }
